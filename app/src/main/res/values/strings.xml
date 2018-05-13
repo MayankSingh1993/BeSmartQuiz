@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">BeSmartQuiz</string>
+    <!--first quiz-->
+    <string name="question1">What is Google I/O?</string>
+    <string name="question1_choice1">is a singing event.</string>
+    <string name="question1_choice2">is a cooking event.</string>
+    <string name="question1_choice3">is an annual developer conference.</string>
+    <string name="question1_choice4">is an event organised by Apple.</string>
+    <!--second quiz-->
+    <string name="question2">When was the first Google I/O  held ?</string>
+    <string name="question2_choice1">2018</string>
+    <string name="question2_choice2">2012</string>
+    <string name="question2_choice3">2008</string>
+    <string name="question2_choice4">2007</string>
+    <!--third quiz-->
+    <string name="question3">In Google I/O 2017 what were new announcements were made?</string>
+    <string name="question3_choice1">Android Oreo</string>
+    <string name="question3_choice2">Google AI</string>
+    <string name="question3_choice3">Android P</string>
+    <string name="question3_choice4">Google Fit</string>
+    <!--fouth quiz-->
+    <string name="question4">When was the latest Google I/O held ?</string>
+    <string name="question4_choice1">28 May 2002</string>
+    <string name="question4_choice2">27 May 2009</string>
+    <string name="question4_choice3">19 May 2017</string>
+    <string name="question4_choice4">8 May 2018</string>
+    <!--fifth quiz-->
+    <string name="question5">Where was the event Google I/O 2018  held ?</string>
+    <string name="question5_choice1">Mountain View,California</string>
+    <string name="question5_choice2">Mars</string>
+    <string name="question5_choice3">At Elon Musk\'s SpaceX</string>
+    <string name="question5_choice4">at Sundar Pichai\'s Home</string>
+    <!--sixth quiz-->
+    <string name="question6">For How many days the Google  I/O 2018 took place ?</string>
+    <string name="question6_choice1">3</string>
+    <string name="question6_choice2">4</string>
+    <string name="question6_choice3">1</string>
+    <string name="question6_choice4">7</string>
+    <!--seventh quiz-->
+    <string name="question7">What were the new announcements made in Google I/O 2018 ?</string>
+    <string name="question7_choice1">Android Nougat</string>
+    <string name="question7_choice2">Home</string>
+    <string name="question7_choice3">Android P</string>
+    <string name="question7_choice4">Material Design 2.0</string>
+    <!--eigth quiz-->
+    <string name="question8">In Bangalore at how many places Google I/O Extended 2018 took place ?</string>
+    <string name="question8_choice1">2</string>
+    <string name="question8_choice2">3</string>
+    <string name="question8_choice3">4</string>
+    <string name="question8_choice4">7</string>
+
+    <!--ninth quiz-->
+    <string name="question9">In Which Year Google introduced Android NanoDegree course at udacity in Google I/O ?</string>
+    <string name="question9_choice1">2017</string>
+    <string name="question9_choice2">2013</string>
+    <string name="question9_choice3">2015</string>
+    <string name="question9_choice4">2016</string>
+
+    <!--tenth quiz-->
+    <string name="question10">When was the Google Assistant Firstly introduced to Android ?</string>
+    <string name="question10_choice1">2014</string>
+    <string name="question10_choice2">2012</string>
+    <string name="question10_choice3">2015</string>
+    <string name="question10_choice4">2016</string>
+    <string name="submit_answers">Submit Answer</string>
+
+
+</resources>
