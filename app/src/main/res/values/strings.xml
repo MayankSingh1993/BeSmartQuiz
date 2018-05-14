@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">BeSmartQuiz</string>
+    <string name="app_name">GoogleSmartQuiz</string>
+    <string name="slide_description">Your Content Info goes here</string>
+    <string name="slide_heading">HEADING</string>
     <!--first quiz-->
     <string name="question1">What is Google I/O?</string>
     <string name="question1_choice1">is a singing event.</string>
@@ -29,7 +31,7 @@
     <string name="question5_choice1">Mountain View,California</string>
     <string name="question5_choice2">Mars</string>
     <string name="question5_choice3">At Elon Musk\'s SpaceX</string>
-    <string name="question5_choice4">at Sundar Pichai\'s Home</string>
+    <string name="question5_choice4">At Sundar Pichai\'s Home</string>
     <!--sixth quiz-->
     <string name="question6">For How many days the Google  I/O 2018 took place ?</string>
     <string name="question6_choice1">3</string>
