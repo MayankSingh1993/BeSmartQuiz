@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,7 +10,7 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/slideViewPager"
         android:layout_width="match_parent"
-        android:layout_height="526dp"
+        android:layout_height="@dimen/_526dp"
         android:background="@color/colorWhite">
 
     </android.support.v4.view.ViewPager>
@@ -21,9 +21,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="0dp"
+        android:layout_marginBottom="@dimen/_0dp"
         android:orientation="horizontal"
-        android:padding="20dp"></LinearLayout>
+        android:padding="@dimen/_20dp"/>
 
     <Button
         android:id="@+id/prevBtn"
@@ -32,21 +32,25 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
+
         android:background="@android:color/transparent"
-        android:text="Back"
+        android:text="@string/back"
         android:textColor="@color/colorTransparentWhite"
-        android:visibility="invisible" />
+        android:visibility="invisible"
+     />
 
     <Button
         android:id="@+id/nextBtn"
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:background="@color/colorTransparentWhite"
-        android:text="Next"
-        android:textColor="@android:color/white" />
+        android:text="@string/next"
+        android:textColor="@android:color/white"
+        tools:ignore = "RelativeOverlap" />
 
 
 </RelativeLayout>

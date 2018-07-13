@@ -9,11 +9,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 public class StartActivity extends AppCompatActivity {
     private ViewPager mSlideViewPager;
     private LinearLayout mDotLayout;
     private TextView[] mDots;
-    private SliderAdapter sliderAdapter;
     private Button mNextBtn;
     private Button mBackBtn;
     private int mCurrentPage;
@@ -23,38 +23,35 @@ public class StartActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mSlideViewPager = (ViewPager) findViewById(R.id.slideViewPager);
-        mDotLayout = (LinearLayout) findViewById(R.id.dotsLayout);
-        mNextBtn=(Button)findViewById(R.id.nextBtn);
-        mBackBtn=(Button)findViewById(R.id.prevBtn);
-        sliderAdapter = new SliderAdapter(this);
+        mSlideViewPager = findViewById(R.id.slideViewPager);
+        mDotLayout = findViewById(R.id.dotsLayout);
+        mNextBtn = findViewById(R.id.nextBtn);
+        mBackBtn = findViewById(R.id.prevBtn);
+        SliderAdapter sliderAdapter = new SliderAdapter(this);
         mSlideViewPager.setAdapter(sliderAdapter);
         addDotsIndicator(0);
         mSlideViewPager.addOnPageChangeListener(viewListener);
         mNextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mSlideViewPager.setCurrentItem(mCurrentPage+1);
+                mSlideViewPager.setCurrentItem(mCurrentPage + 1);
             }
         });
         mBackBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mSlideViewPager.setCurrentItem(mCurrentPage-1);
+                mSlideViewPager.setCurrentItem(mCurrentPage - 1);
             }
         });
         mNextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i;
-                i = new Intent(StartActivity.this,MainActivity.class);
+                i = new Intent(StartActivity.this, MainActivity.class);
                 finish();
                 startActivity(i);
             }
         });
-
-
-
 
 
     }
@@ -84,27 +81,25 @@ public class StartActivity extends AppCompatActivity {
         @Override
         public void onPageSelected(int position) {
             addDotsIndicator(position);
-            mCurrentPage=position;
-            if(position==0)
-            {
+            mCurrentPage = position;
+            if (position == 0) {
                 mNextBtn.setEnabled(true);
                 mBackBtn.setEnabled(false);
                 mBackBtn.setVisibility(View.INVISIBLE);
-                mNextBtn.setText("Next");
+                mNextBtn.setText(R.string.next);
                 mBackBtn.setText("");
-            }else if(position==mDots.length-1){
+            } else if (position == mDots.length - 1) {
                 mNextBtn.setEnabled(true);
                 mBackBtn.setEnabled(true);
                 mBackBtn.setVisibility(View.VISIBLE);
-                mNextBtn.setText("Finish");
-                mBackBtn.setText("Back");
-            }
-            else {
+                mNextBtn.setText(R.string.finish);
+                mBackBtn.setText(R.string.back);
+            } else {
                 mNextBtn.setEnabled(true);
                 mBackBtn.setEnabled(true);
                 mBackBtn.setVisibility(View.VISIBLE);
-                mNextBtn.setText("Next");
-                mBackBtn.setText("Back");
+                mNextBtn.setText(R.string.next);
+                mBackBtn.setText(R.string.back);
             }
 
         }

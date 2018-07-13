@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="activity_vertical_margin">20dp</dimen>
-    <dimen name="activity_horizontal_margin">20dp</dimen>
-</resources>
+<resources >
+
+    <dimen name = "_200dp" >200dp</dimen >
+    <dimen name = "_526dp" >526dp</dimen >
+    <dimen name = "_0dp" >0dp</dimen >
+    <dimen name = "_20dp" >20dp</dimen >
+    <dimen name = "_163dp" >163dp</dimen >
+    <dimen name = "_105dp" >105dp</dimen >
+    <dimen name = "_20sp" >20sp</dimen >
+    <dimen name = "_97dp" >97dp</dimen >
+    <dimen name = "_35dp" >35dp</dimen >
+    <dimen name = "_16sp" >16sp</dimen >
+    <dimen name = "_53dp" >53dp</dimen >
+    <dimen name = "_58dp" >58dp</dimen >
+    <dimen name = "_142dp" >142dp</dimen ><dimen name = "_18sp" >18sp</dimen >
+
+</resources >

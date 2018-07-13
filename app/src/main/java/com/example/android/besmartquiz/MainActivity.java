@@ -1,8 +1,8 @@
 package com.example.android.besmartquiz;
 
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
         Boolean answer1;
 
-        question1_choice3 = (RadioButton) this.findViewById(R.id.question1_choice3);
+        question1_choice3 = this.findViewById(R.id.question1_choice3);
         answer1 = question1_choice3.isChecked();
         if (answer1) {
             answer1_score = 1;
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         // For Question 2 - Correct Answer is #3 "2008"
 
         Boolean answer2;
-        question2_choice3 = (RadioButton) this.findViewById(R.id.question2_choice3);
+        question2_choice3 = this.findViewById(R.id.question2_choice3);
         answer2 = question2_choice3.isChecked();
 
         if (answer2) {
@@ -97,10 +97,10 @@ public class MainActivity extends AppCompatActivity {
         Boolean answer3_choice2;
         Boolean answer3_choice3;
         Boolean answer3_choice4;
-        question3_choice1 = (CheckBox) this.findViewById(R.id.question3_choice1);
-        question2_choice2 = (CheckBox) this.findViewById(R.id.question3_choice2);
-        question3_choice3 = (CheckBox) this.findViewById(R.id.question3_choice3);
-        question3_choice4 = (CheckBox) this.findViewById(R.id.question3_choice4);
+        question3_choice1 = this.findViewById(R.id.question3_choice1);
+        question2_choice2 = this.findViewById(R.id.question3_choice2);
+        question3_choice3 = this.findViewById(R.id.question3_choice3);
+        question3_choice4 = this.findViewById(R.id.question3_choice4);
         answer3_choice1 = question3_choice1.isChecked();
         answer3_choice2 = question2_choice2.isChecked();
         answer3_choice3 = question3_choice3.isChecked();
@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
         // For Question 4 - Correct Answer is #4 "8 May 2018"
 
         Boolean answer4;
-        question4_choice4 = (RadioButton) this.findViewById(R.id.question4_choice4);
+        question4_choice4 = this.findViewById(R.id.question4_choice4);
         answer4 = question4_choice4.isChecked();
         if (answer4) {
             answer4_score = 1;
@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
         // For Question 5  - Correct Answers is #1 "Mountain View,California"
 
         Boolean answer5;
-        question5_choice1 = (RadioButton) this.findViewById(R.id.question5_choice1);
+        question5_choice1 = this.findViewById(R.id.question5_choice1);
         answer5 = question5_choice1.isChecked();
         if (answer5) {
             answer5_score = 1;
@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
         // For Question 6 - Correct Answer is #1 "3"
 
         Boolean answer6;
-        question6_choice1 = (RadioButton) this.findViewById(R.id.question6_choice1);
+        question6_choice1 = this.findViewById(R.id.question6_choice1);
         answer6 = question6_choice1.isChecked();
         if (answer6) {
             answer6_score = 1;
@@ -150,10 +150,10 @@ public class MainActivity extends AppCompatActivity {
         Boolean answer7_choice2;
         Boolean answer7_choice3;
         Boolean answer7_choice4;
-        question7_choice1 = (CheckBox) this.findViewById(R.id.question7_choice1);
-        question7_choice2 = (CheckBox) this.findViewById(R.id.question7_choice2);
-        question7_choice3 = (CheckBox) this.findViewById(R.id.question7_choice3);
-        question7_choice4 = (CheckBox) this.findViewById(R.id.question7_choice4);
+        question7_choice1 = this.findViewById(R.id.question7_choice1);
+        question7_choice2 = this.findViewById(R.id.question7_choice2);
+        question7_choice3 = this.findViewById(R.id.question7_choice3);
+        question7_choice4 = this.findViewById(R.id.question7_choice4);
         answer7_choice1 = question7_choice1.isChecked();
         answer7_choice2 = question7_choice2.isChecked();
         answer7_choice3 = question7_choice3.isChecked();
@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
         // For Question 8 - Correct Answer is #3 "4"
 
         Boolean answer8;
-        question8_choice3 = (RadioButton) this.findViewById(R.id.question8_choice3);
+        question8_choice3 = this.findViewById(R.id.question8_choice3);
         answer8 = question8_choice3.isChecked();
         if (answer8) {
             answer8_score = 1;
@@ -178,7 +178,7 @@ public class MainActivity extends AppCompatActivity {
         // For Question 9  - Correct Answers is #3 "2015"
 
         Boolean answer9;
-        question9_choice3 = (RadioButton) this.findViewById(R.id.question9_choice3);
+        question9_choice3 = this.findViewById(R.id.question9_choice3);
         answer9 = question9_choice3.isChecked();
         if (answer9) {
             answer9_score = 1;
@@ -189,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
         // For Question 10 - Correct Answer is #4 "2016"
 
         Boolean answer10;
-        question10_choice4 = (RadioButton) this.findViewById(R.id.question10_choice4);
+        question10_choice4 = this.findViewById(R.id.question10_choice4);
         answer10 = question10_choice4.isChecked();
         if (answer10) {
             answer10_score = 1;
@@ -199,8 +199,7 @@ public class MainActivity extends AppCompatActivity {
 
         // For Final Score
 
-        final_score = answer1_score + answer2_score + answer3_score + answer4_score + answer5_score +
-                answer6_score + answer7_score + answer8_score + answer9_score + answer10_score;
+        final_score = answer1_score + answer2_score + answer3_score + answer4_score + answer5_score + answer6_score + answer7_score + answer8_score + answer9_score + answer10_score;
 
         if (final_score == 10) {
             resultsDisplay = "Perfect! You scored 10 out of 10";
