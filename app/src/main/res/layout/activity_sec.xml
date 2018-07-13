@@ -349,36 +349,13 @@
 
               android:textSize = "@dimen/_18sp" />
 
-          <RadioGroup xmlns:android = "http://schemas.android.com/apk/res/android"
-              android:layout_width = "fill_parent"
+          <EditText
+              android:id = "@+id/editText"
+              android:layout_width = "match_parent"
               android:layout_height = "wrap_content"
-              android:orientation = "vertical" >
-
-              <RadioButton
-                  android:id = "@+id/question9_choice1"
-                  android:layout_width = "wrap_content"
-                  android:layout_height = "wrap_content"
-                  android:text = "@string/question9_choice1" />
-
-              <RadioButton
-                  android:id = "@+id/question9_choice2"
-                  android:layout_width = "wrap_content"
-                  android:layout_height = "wrap_content"
-                  android:text = "@string/question9_choice2" />
-              <RadioButton
-                  android:id = "@+id/question9_choice3"
-                  android:layout_width = "wrap_content"
-                  android:layout_height = "wrap_content"
-                  android:text = "@string/question9_choice3" />
-
-              <RadioButton
-                  android:id = "@+id/question9_choice4"
-                  android:layout_width = "wrap_content"
-                  android:layout_height = "wrap_content"
-                  android:text = "@string/question9_choice4" />
-
-          </RadioGroup >
-
+              android:ems = "10"
+              android:hint = "@string/hint"
+              android:inputType = "textPersonName" />
           <TextView
               android:id = "@+id/question10"
               android:layout_width = "wrap_content"

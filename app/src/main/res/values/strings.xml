@@ -67,7 +67,7 @@
     <string name="submit_answers">Submit Answer</string>
     <string name = "next" >Next</string >
     <string name = "finish" >Finish</string >
-    <string name = "back" >Back</string >
+    <string name = "back" >Back</string ><string name = "hint" >please give your answer here</string >
 
 
 

@@ -8,6 +8,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     RadioButton question2_choice3;
     // For Question 3
     CheckBox question3_choice1;
-    CheckBox question2_choice2;
+    CheckBox question3_choice2;
     CheckBox question3_choice3;
     CheckBox question3_choice4;
 
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     // For Question 8
     RadioButton question8_choice3;
     // For Question 9
-    RadioButton question9_choice3;
+    EditText question9_ans;
 
     // For Question 10
     RadioButton question10_choice4;
@@ -98,11 +99,11 @@ public class MainActivity extends AppCompatActivity {
         Boolean answer3_choice3;
         Boolean answer3_choice4;
         question3_choice1 = this.findViewById(R.id.question3_choice1);
-        question2_choice2 = this.findViewById(R.id.question3_choice2);
+        question3_choice2 = this.findViewById(R.id.question3_choice2);
         question3_choice3 = this.findViewById(R.id.question3_choice3);
         question3_choice4 = this.findViewById(R.id.question3_choice4);
         answer3_choice1 = question3_choice1.isChecked();
-        answer3_choice2 = question2_choice2.isChecked();
+        answer3_choice2 = question3_choice2.isChecked();
         answer3_choice3 = question3_choice3.isChecked();
         answer3_choice4 = question3_choice4.isChecked();
         if (answer3_choice1 && answer3_choice2 && !answer3_choice3 && !answer3_choice4) {
@@ -177,10 +178,11 @@ public class MainActivity extends AppCompatActivity {
 
         // For Question 9  - Correct Answers is #3 "2015"
 
-        Boolean answer9;
-        question9_choice3 = this.findViewById(R.id.question9_choice3);
-        answer9 = question9_choice3.isChecked();
-        if (answer9) {
+        String answer9;
+        question9_ans = this.findViewById(R.id.editText);
+        answer9 = question9_ans.getText().toString();
+
+        if (answer9.equals("2015")) {
             answer9_score = 1;
         } else {
             answer9_score = 0;
